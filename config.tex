@@ -1,0 +1,44 @@
+%% Multi-language support:
+\usepackage[english, spanish, brazilian]{babel}
+
+%% Configuring the references format:
+\usepackage[backend=biber,backref=true,repeatfields=true,style=abnt]{biblatex}
+
+%% This command selects the font:
+\usepackage[T1]{fontenc}  % Fix UTF characters
+% \usepackage{tgschola}  % Select a different font
+
+%% The following packages are used to improve the way
+% references are displayed:
+\usepackage{xcolor}  % support colors
+\usepackage{url}  % support hyperlinks to URLs
+\usepackage{csquotes}  % support quotes
+\usepackage{hyperref}  % support links inside the PDF file
+
+%% Allows selecting line spacing
+\usepackage{setspace}
+
+%% Increase the space between bibliography items:
+\setlength\bibitemsep{1.5em}
+
+%% Increase the space between lines to 1.5:
+\usepackage{geometry}  % This package allows selecting margins size
+
+%% Allow inserting images:
+\usepackage{graphicx}
+
+%% The file containing bibtex references:
+\addbibresource{./references.bib}
+
+% This will properly set colors in the hyperlinks:
+\definecolor{darkblue}{HTML}{003366}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    citecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+%% This package helps printing dummy text:
+\usepackage{lipsum}

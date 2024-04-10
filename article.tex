@@ -1,0 +1,37 @@
+%% Here the main font size and paper size are defined.
+% The base class for this file is **article**:
+\documentclass[a4paper,12pt]{article}
+
+%% Insert a file containing all configuration commands
+% in a separate file to improve readability:
+\input{config.tex}
+
+%% Define the title, author and date info to be
+% printed on the document header:
+\title{
+    \textbf{Exemplo de Documento Latex:}\\
+    Um template enxuto e bem-organizado
+}
+\author{
+    \textbf{Wesley Rodrigues}\\
+    \small{Instituto de Pesquisas Tecnológicas do Estado de São Paulo}\\
+    \small{\textit{\url{wesley.silva@ensino.ipt.br}}}
+}
+\date{9 de Abril de 2024}
+
+
+%% Here begins the document:
+\begin{document}
+\maketitle
+\onehalfspacing
+
+Existem diferentes tipos de citações na ABNT. Uma delas é a citação indireta, que pode conter o autor no corpo do texto ou no final do parágrafo, como feito neste exemplo \cite{TR_1991b}. A outra forma de citação indireta seria assim: segundo \textcite{JART_2017}, você pode citar desta forma. Há casos com mais de uma citação no mesmo parágrafo. Este exemplo terá várias citações \cite{INPRO_2015,DISSERT_2022,ABNT_NBR_12836}.
+
+Os próximos parágrafos estão preenchidos com um texto de exemplo, o Lorem Ipsum. \lipsum[1-10]
+
+%% This command prints the references in the format selected
+% in the config file:
+\printbibliography[title=Referências]
+
+%% Finish the LATEX document:
+\end{document}
